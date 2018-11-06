@@ -12,6 +12,7 @@ h2	{
 	}
 	
 figure  {
+	
 			background-color: #F2EDED;
 			border: 1px		groove	#ccc;
 			text-align:	center;
@@ -84,3 +85,41 @@ body	{
 .menu-departamentos	{
 				float:	left;
 }
+
+p::first-letter	{
+	font-weight:	bold;
+}
+
+h1	+	p	{
+	text-indent: 0;
+}
+
+p::first-line	{
+	font-variant:	small-caps;
+}
+
+:not(p)	+	p::first-line	{
+	font-variant:	small-caps;
+}
+@media	(max-width:	320px)	{
+	.container	{
+		width: 96%;
+    }
+	/*	adicionar	aqui	os	novos	estilos	para	mobile	*/
+}
+
+header h1	{
+	text-align:	center;
+}
+header h1 img	{
+	max-width: 50%;
+}
+
+@media	(max-width:	939px)	{
+	/*	estilos	para	mobile	*/
+}
+
+p{
+	width:	auto;
+}
+	
