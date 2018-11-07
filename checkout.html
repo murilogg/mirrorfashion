@@ -1,0 +1,133 @@
+<!-- 8.4	EXERCÍCIO 1 : CRIANDO A PÁGINA	DE	CHECKOUT -->
+<!doctype	html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
+    
+    <!--8.4	EXERCÍCIO 2 : ADICIONANDO ESTILO CSS BOOTSTRAP NA PÁGINA DE	CHECKOUT-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--FECHA-->
+
+    <title>Checkout Mirror Fashion</title>
+</head>
+
+<body>
+
+    <!--8.4	EXERCÍCIO 3 : CRIANDO CLASSES NA PÁGINA	DE	CHECKOUT-->
+    <div class="jumbotron	jumbotron-fluid">
+        <div class="container">
+            <!--	h1	e	p	que	já	tínhamos,	somente	adicionar	as	respectivas	classes	-->
+            <h1 class="display-4">Ótima escolha!</h1>
+            <p class="lead">Obrigado por comprar na Mirror Fashion!
+                Preencha seus dados para efetivar a compra.</p>
+        </div><!--	fim	.container	dentro	do	jumbotron	-->
+    </div><!--	fim	.jumbotron	-->
+    <!--FECHA-->
+
+    <!--8.4	EXERCÍCIO 4 : USANDO OUTRA CLASSE PARA ORGANIZAR O CARD NO CENTRO DA TELA DA PÁGINA	DE	CHECKOUT-->
+    <div class="container">
+
+        <!--8.4	EXERCÍCIO 4 : USANDO CARD PARA ORGANIZAR A PÁGINA	DE	CHECKOUT-->
+        <div class="card	mb-3">
+            <div class="card-header">
+                <h2>Sua compra</h2>
+            </div><!--	fim	.card-header	-->
+            <div class="card-body">
+
+                <!--8.4	EXERCÍCIO 6 : ADICIONANDO IMAGEM A PÁGINA	DE	CHECKOUT-->
+                <img src="img/produtos/foto1-verde.png" alt="Fuzzy	Cardigan" class="img-thumbnail	mb-3">
+                <!--FECHA-->
+
+                <!--	...	aqui	vai	o	<dl>	que	já	temos	...	-->
+                <dl>
+                    <dt>Produto</dt>
+                    <dd>Fuzzy Cardigan</dd>
+
+                    <dt>Cor</dt>
+                    <dd>Verde</dd>
+
+                    <dt>Tamanho</dt>
+                    <dd>40</dd>
+
+                    <dt>Preço</dt>
+                    <dd>R$ 129,90</dd>
+                </dl>
+            </div><!--	fim	.card-body	-->
+        </div><!--	fim	.card	-->
+        <!--FECHA-->
+
+        <!--8.9	EXERCÍCIO 1 : CRIANDO FORMULÁRIOS -->
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <!--8.9	EXERCÍCIO 3 : placeholder DICAS DE PREENCHIMENTO -->
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                    <!--FECHA-->
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <!--8.9	EXERCÍCIO 3 : placeholder DICAS DE PREENCHIMENTO -->
+                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+                    <!--FECHA-->
+                </div>
+                <div class="form-group	custom-control	custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                    <label class="custom-control-label" for="newsletter">
+                        Quero receber Newsletter da Mirror Fashion
+                    </label>
+                </div>
+            </fieldset>
+
+            <!--8.9	EXERCÍCIO 2 : CRIANDO DADOS DO CARTÃO -->
+            <fieldset>
+                <legend>Cartão de crédito</legend>
+                <div class="form-group">
+                    <label for="numero-cartao">Número - CVV</label>
+                    <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                </div>
+                <div class="form-group">
+                    <label for="bandeira-cartao">Bandeira</label>
+                    <select class="custom-select" id="bandeira-cartao">
+                        <option disabled selected>Selecione uma opção...</option>
+                        <option value="master">MasterCard</option>
+                        <option value="visa">VISA</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="validade-cartao">Validade</label>
+                    <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                </div>
+            </fieldset>
+            <!--FECHA-->
+
+
+            <!--8.9	EXERCÍCIO 3 : CRIANDO BOTÃO DE ENVIO DOS DADOS DIGITADOS-->
+            <button type="submit" class="btn	btn-primary">
+
+                <!--8.9	EXERCÍCIO 5 : CRIANDO BOTÃO DE ENVIO DOS DADOS DIGITADOS-->
+                <span class="oi	oi-thumb-up"></span>
+                <!--FECHA-->
+
+                Confirmar Pedido
+            </button>
+            <!--FECHA-->
+
+        </form>
+        <!--FECHA-->
+
+    </div>
+    <!--FECHA-->
+</body>
+
+</html>
+<!--FECHA-->

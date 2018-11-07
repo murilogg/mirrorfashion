@@ -101,25 +101,3 @@ p::first-line	{
 :not(p)	+	p::first-line	{
 	font-variant:	small-caps;
 }
-@media	(max-width:	320px)	{
-	.container	{
-		width: 96%;
-    }
-	/*	adicionar	aqui	os	novos	estilos	para	mobile	*/
-}
-
-header h1	{
-	text-align:	center;
-}
-header h1 img	{
-	max-width: 50%;
-}
-
-@media	(max-width:	939px)	{
-	/*	estilos	para	mobile	*/
-}
-
-p{
-	width:	auto;
-}
-	
