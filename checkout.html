@@ -6,12 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="js/total.js"></script>
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
 
     <!--8.4	EXERCÍCIO 2 : ADICIONANDO ESTILO CSS BOOTSTRAP NA PÁGINA DE	CHECKOUT-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!--FECHA-->
-
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
 
     <title>Checkout Mirror Fashion</title>
 </head>
@@ -123,7 +122,7 @@
                         <div class="form-group">
                             <label for="cpf">CPF</label>
                             <!--8.9	EXERCÍCIO 3 : placeholder DICAS DE PREENCHIMENTO -->
-                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00"
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00"	data-mask="999.999.999-99""
                                 required>
                             <!--FECHA-->
                         </div>
@@ -140,7 +139,7 @@
                         <legend>Cartão de crédito</legend>
                         <div class="form-group">
                             <label for="numero-cartao">Número - CVV</label>
-                            <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                            <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" data-mask="9999 9999 9999 9999 - 999">
                         </div>
                         <div class="form-group">
                             <label for="bandeira-cartao">Bandeira</label>
@@ -181,7 +180,7 @@
     <!--FECHA-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    <script type="text/javascript" src="js/inputmask-plugin.js"></script>
 </body>
 
 </html>

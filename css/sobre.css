@@ -62,7 +62,14 @@ body	{
 #centro-distribuicao	{
 	margin-left:	auto;
 	margin-right:	auto;
-	width: 550px;
+	width: 900px;
+}
+
+#mapa {
+	margin-left:	auto;
+	margin-right:	auto;
+	width: 940px;
+
 }
 
 #rodape	{
