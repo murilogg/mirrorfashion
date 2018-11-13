@@ -135,6 +135,7 @@ label[for=azul]::after	{
     fieldset	{
         display:	inline-block;
         vertical-align:	top;
+        
         margin: 1em 0;
         min-width: 240px;
         width: 45%;
@@ -207,4 +208,10 @@ td:first-child	{
     border: 3px	solid	#666;
     border-radius: 50%;
     color: #555;
+}
+
+div{
+    margin-left:	auto;
+	margin-right:	auto;
+	width: 939px;
 }
